@@ -1,0 +1,45 @@
+{
+  "name": "goit-js-hw-13-image-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build --no-minify src/index.html --public-url /goit-js-hw-13-image-finder/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kostuk42/goit-js-hw-13-image-finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kostuk42/goit-js-hw-13-image-finder/issues"
+  },
+  "homepage": "https://github.com/kostuk42/goit-js-hw-13-image-finder",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "basiclightbox": "^5.0.4",
+    "gh-pages": "^3.2.3",
+    "handlebars": "^4.7.7",
+    "lodash.debounce": "^4.0.8",
+    "parcel": "^2.0.0-beta.2",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "toastr": "^2.1.4"
+  },
+  "dependencies": {
+    "infinite-scroll": "^4.0.1"
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ]
+}
