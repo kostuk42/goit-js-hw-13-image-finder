@@ -1,3 +1,4 @@
+
 export default function ApiService(toastr) {
     this.key = '22433952-2d63403013f80436a9dd1929b';
     this.lastQuery = '';
@@ -10,7 +11,7 @@ export default function ApiService(toastr) {
     this.api = async (searchQuery, cardTemplate) => {
         const galleryEl = document.body.querySelector('.gallery');
         if (!searchQuery) {
-            // console.log('No choice!');
+
             this.toastr.error('No choice!');
             return
         }
@@ -20,7 +21,6 @@ export default function ApiService(toastr) {
             galleryEl.innerHTML = null;
         }
         if (this.result && this.result.total === this.control) {
-            // console.log('there is nothing to show more');
             this.toastr.info('there is nothing to show more');
             return
         }

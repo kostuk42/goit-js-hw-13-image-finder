@@ -139,7 +139,6 @@ function ApiService(toastr) {
     const galleryEl = document.body.querySelector('.gallery');
 
     if (!searchQuery) {
-      // console.log('No choice!');
       this.toastr.error('No choice!');
       return;
     }
@@ -151,7 +150,6 @@ function ApiService(toastr) {
     }
 
     if (this.result && this.result.total === this.control) {
-      // console.log('there is nothing to show more');
       this.toastr.info('there is nothing to show more');
       return;
     }
