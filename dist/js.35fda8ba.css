@@ -242,11 +242,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-}
-.stats-item {
-    display: flex;
-    align-items: center;
+    /* text-align: center; */
 }
 .gallery {
     width: 100%;
@@ -267,8 +263,6 @@ img {
     height: 80%;
     object-fit: cover;
     cursor: pointer;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
-                  
 }
 #search-form {
     font-size: 1.5rem;
@@ -276,19 +270,26 @@ img {
     top: 8px;
     left: 50%;
     transform: translateX(-50%);
+    
 }
-.search {
-        position: fixed;
-        transform: translateX(-100%);
-    }   
 
-@media screen and (max-width: 768px) {
+/* .toast.toast-warning {
+    background-color: red;
+    ;
+} */
+
+
+@media screen and (max-width: 480px) {
     .photo-card {
     width: 100%;
     margin: 5px;
 }
-    
+    .search {
+        position: fixed;
+        transform: translateX(-100%);
+    }   
     .toast{
+        /* min-width: 80%; */
         top: 40px;
         left: 50%;
         transform: translateX(-50%);
@@ -296,4 +297,4 @@ img {
 }
 
 .basicLightbox{position:fixed;display:flex;justify-content:center;align-items:center;top:0;left:0;width:100%;height:100vh;background:rgba(0,0,0,.8);opacity:.01;transition:opacity .4s ease;z-index:1000;will-change:opacity}.basicLightbox--visible{opacity:1}.basicLightbox__placeholder{max-width:100%;transform:scale(.9);transition:transform .4s ease;z-index:1;will-change:transform}.basicLightbox__placeholder>iframe:first-child:last-child,.basicLightbox__placeholder>img:first-child:last-child,.basicLightbox__placeholder>video:first-child:last-child{display:block;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;max-width:95%;max-height:95%}.basicLightbox__placeholder>iframe:first-child:last-child,.basicLightbox__placeholder>video:first-child:last-child{pointer-events:auto}.basicLightbox__placeholder>img:first-child:last-child,.basicLightbox__placeholder>video:first-child:last-child{width:auto;height:auto}.basicLightbox--iframe .basicLightbox__placeholder,.basicLightbox--img .basicLightbox__placeholder,.basicLightbox--video .basicLightbox__placeholder{width:100%;height:100%;pointer-events:none}.basicLightbox--visible .basicLightbox__placeholder{transform:scale(1)}
-/*# sourceMappingURL=/js.00a46daa.css.map */
+/*# sourceMappingURL=/goit-js-hw-13-image-finder/js.35fda8ba.css.map */

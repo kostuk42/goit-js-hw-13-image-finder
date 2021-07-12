@@ -8,12 +8,7 @@ import * as basicLightbox from 'basiclightbox';
 import 'basicLightbox/dist/basicLightbox.min.css';
 let apiService = new ApiService(toastr);
 let searchQuery = '';
-const refs = {
-    inputEl: document.body.querySelector('.search-form input'),
-    buttonEl: document.body.querySelector('.search'),
-    galleryEl: document.body.querySelector('.gallery')
-    
-}
+import refs from './refs.js';
 
 refs.inputEl.addEventListener("change", (e) => {
     searchQuery = refs.inputEl.value;
