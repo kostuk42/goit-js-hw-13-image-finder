@@ -59,9 +59,4 @@ img {
     margin: 5px;
 }
     
-    .toast{
-        top: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 }

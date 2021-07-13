@@ -1,6 +1,15 @@
 import refs from './refs.js';
 import toastr from 'toastr';
 
+toastr.options = {
+  "debug": false,
+  "positionClass": "toast-bottom-full-width",
+  "onclick": null,
+  "fadeIn": 300,
+  "fadeOut": 1000,
+  "timeOut": 5000,
+  "extendedTimeOut": 1000
+}
 export default function ApiService() {
     this.key = '22433952-2d63403013f80436a9dd1929b';
     this.lastQuery = '';
@@ -66,7 +75,8 @@ export default function ApiService() {
             }
             const callback = (entries, observer) => {
                 if (entries[0].isIntersecting) {
-                    if(this.control <12 ) return
+                    if (this.control < 12) return
+                    console.log([entries]);
                     this.api(searchQuery, cardTemplate);
                 }
             }
